@@ -20,7 +20,7 @@ public class Exercice {
 
         for (int i = 0; i < chars.length; i++) {
             char c = chars[i];
-            if (c != ' ') {
+            if (Character.isLetter(c) || Character.isDigit(c)) {
                 if (wordLength == 0) {
                     startIndex = i;
                 }
@@ -56,6 +56,3 @@ public class Exercice {
         return result;
     }
 }
-
-
-
